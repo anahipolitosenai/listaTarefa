@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+</head>
+<body>
+
+    <h1>Minha Agenda de Tarefas</h1>
+
+    <script>
+        // PASSO 1: Criar um array com 7 tarefas
+        let minhaAgenda = [
+            "8h - estudar", "9h - exercícios", "10h - arrumar o quarto","11h - almoçar","13h - fazer trabalho","14h - tomar banho","15h - dormir"
+        ];
+
+        console.log("Passo 1:", minhaAgenda);
+
+        // PASSO 2: Verificar o tamanho
+        console.log("Passo 2: Você tem " + minhaAgenda.length+ " tarefas pendentes.");
+
+        // PASSO 3: Adicionar uma tarefa urgente
+        minhaAgenda.push("7h - fazer tarefa urgente");
+
+        console.log("Passo 3:", minhaAgenda);
+
+        // PASSO 4: Organizar a lista
+        minhaAgenda.sort();
+
+        console.log("Passo 4:", minhaAgenda);
+        </script>
+
+</body>
+</html>
