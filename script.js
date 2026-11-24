@@ -1,2 +1,49 @@
 
 // PASSO 1: Criar um array com 7 tarefas
+let minhaAgenda = [
+    "8h - Estudar",
+    "9h - Fazer exercícios",
+    "10h - Arrumar o quarto",
+    "11h - Almoçar",
+    "13h - Fazer trabalho",
+    "14h - Ler um livro",
+    "15h - Descansar"
+];
+
+console.log("Passo 1 - Minha agenda:", minhaAgenda);
+
+
+// PASSO 2: Verificar o tamanho da agenda
+console.log("Passo 2 - Você tem " + minhaAgenda.length + " tarefas pendentes.");
+
+
+// PASSO 3: Adicionar uma tarefa urgente
+minhaAgenda.push("7h - Entregar trabalho urgente");
+
+console.log("Passo 3 - Agenda com tarefa urgente:", minhaAgenda);
+
+
+// PASSO 4: Organizar a lista
+minhaAgenda.sort();
+
+console.log("Passo 4 - Agenda organizada:", minhaAgenda);
+
+
+// PASSO 5: Concluir a primeira tarefa
+let tarefaConcluida = minhaAgenda.shift();
+
+console.log("Passo 5 - Tarefa concluída:", tarefaConcluida);
+console.log("Agenda atualizada:", minhaAgenda);
+
+
+// PASSO 6: Desistir da última tarefa
+let tarefaRemovida = minhaAgenda.pop();
+
+console.log("Passo 6 - Tarefa removida:", tarefaRemovida);
+console.log("Agenda atualizada:", minhaAgenda);
+
+
+// PASSO 7: Remover uma tarefa do meio
+minhaAgenda.splice(2, 1);
+
+console.log("Passo 7 - Agenda após remover uma tarefa do meio:", minhaAgenda);
